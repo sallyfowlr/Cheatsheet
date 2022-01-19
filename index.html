@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title>CSS Cheat Sheet</title>
+  </head>
+  <body>
+    <!--- Title --->
+    <h1>CSS Cheat Sheet</h1>
+    <!--- Table ONE --->
+    <h2>CSS Syntax & Selectors</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope= "col">Selector Type</th>
+            <th scope= "col">Syntax</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Type Selectors</td>
+            <td>"article {}"</td>
+            <td>CSS type selectors are used to match all elements of a given type or tag name. Unlike for HTML syntax, we do not include the angle brackets when using type selectors for tag names.</td>
+          </tr>
+          <tr>
+            <td>Class Selectors</td>
+            <td>".article {}"</td>
+            <td>The CSS class selector matches elements based on the contents of their <em>class</em> attribute. For selecting elements having "article" as the value of the class attribute, a . needs to be prepended.</td>
+          </tr>
+          <tr>
+            <td>ID Selectors</td>
+            <td>"#article {}"</td>
+            <td>The CSS ID selector matches elements based on the contents of their id attribute. The values of id attribute should be unique in the entire DOM. For selecting the element having "article" as the value of the id attribute, a # needs to be prepended.</td>
+          </tr>
+          <tr>
+            <td>Group of Selectors</td>
+            <td>"h1, h2 {}"</td>
+            <td>Match multiple selectors to the same CSS rule, using a comma-separated list. In this example, the text for both h1 and h2 is set to red.</td>
+          </tr>
+          <tr>
+            <td>Chaining Selectors</td>
+            <td>"h3.section-heading {}"</td>
+            <td>CSS selectors can be chained so that rule sets apply only to elements that match all criteria. For instance, to select h3 elements that also have the section-heading class, the selector h3.section-heading can be used.</td>
+          </tr>
+          <tr>
+            <td>Decendant Selectors</td>
+            <td>"div span {}"</td>
+            <td>The CSS descendant selector combinator is used to match elements that are descended from another matched selector. They are denoted by a single space between each selector and the descended selector. div span will match all span elements that are inside a div element.</td>
+          </tr>
+        </tbody>
+      </table>
+<!--- Table TWO--->
+    <h2>CSS Declarations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope= "col">Declaration</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>!important</td>
+          <td>The CSS !important rule is used on declarations to override any other declarations for a property and ignore selector specificity. !important rules will ensure that a specific declaration always applies to the matched elements. However, generally it is good to avoid using !important as bad practice.</td>
+        </tr>
+        <tr>
+          <td>font-weight</td>
+          <td>The font-weight CSS property can be used to set the weight (boldness) of text. The provided value can be "normal (400)", "bold (700)", "bolder", "lighter" or a number between 100 and 1000.</td>
+        </tr>
+        <tr>
+          <td>text-align</td>
+          <td>The text-align CSS property can be used to set the text alignment of inline contents. This property can be set to these values: left, right, or center.</td>
+        </tr>
+        <tr>
+          <td>opacity</td>
+          <td>The opacity CSS property can be used to control the transparency of an element. The value of this property ranges from 0 (transparent) to 1 (opaque).</td>
+        </tr>
+        <tr>
+          <td>Resource URL</td>
+          <td>In CSS, the url() function is used to wrap resource URLs. These can be applied to several properties such as the background-image.</td>
+        </tr>
+        <tr>
+          <td>background-image</td>
+          <td>The background-image CSS property sets the background image of an element. An image URL should be provided in the syntax url("moon.jpg") as the value of the property.</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
